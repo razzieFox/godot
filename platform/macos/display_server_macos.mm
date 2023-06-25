@@ -77,10 +77,6 @@ const NSMenu *DisplayServerMacOS::_get_menu_root(const String &p_menu_root) cons
 			menu = submenu[p_menu_root];
 		}
 	}
-	if (menu == apple_menu) {
-		// Do not allow to change Apple menu.
-		return nullptr;
-	}
 	return menu;
 }
 
